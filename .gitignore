@@ -1,3 +1,4 @@
 **/*.sw*
 *.sw*
 lib/golf.rb
+spec/*.report

@@ -11,6 +11,14 @@ describe "Golf" do
     end
   end
 
+
+  describe ".hole3" do
+    it "should calculate the factorial of 4, i.e. 4*3*2*1" do
+      Golf.hole3(4).should == 24
+    end
+  end
+
+
   describe ".hole6" do
     it "should play fizzbuzz to 3, where multiples of 3 are 'fizz'" do
       Golf.hole6(3).should == [1,2,"fizz"]
@@ -37,6 +45,11 @@ describe "Golf" do
       Golf.hole8(15).should == [1,1,2,3,5,8,13,21,34,55,89,144,233,377,610]
     end
   end
+
+  describe ".hole9" do
+
+  end
+
 
 end
 
