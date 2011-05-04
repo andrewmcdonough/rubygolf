@@ -16,7 +16,9 @@ task :count do
     solution = file.read
     solution.gsub!(/\w/,"") unless COUNT_WHITESPACE
     total_characters = solution.length
-    puts "----------------------"
-    puts "Total characters: #{total_characters}" 
+    puts "-----------------------------------------------"
+    puts "| Congratulations, you've completed the course."
+    puts "| Total characters: #{total_characters}        " 
+    puts "-----------------------------------------------"
   end
 end
