@@ -14,7 +14,7 @@ task :default => [:spec, :count]
 task :count do
   open(File.dirname(__FILE__) + "/lib/golf.rb") do |file|
     solution = file.read
-    solution.gsub!(/\w/,"") unless COUNT_WHITESPACE
+    solution.gsub!(/\s/,"") unless COUNT_WHITESPACE
     total_characters = solution.length
     puts "-----------------------------------------------"
     puts "| Congratulations, you've completed the course."
