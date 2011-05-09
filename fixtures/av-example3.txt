@@ -1,0 +1,12 @@
+blue, yellow, red
+blue, yellow, green, red
+blue
+blue, green, yellow, red
+yellow, blue, red
+green, yellow, blue, red
+yellow, blue, green, red
+red, green, yellow, blue
+red, green
+red, blue, yellow, green
+red
+red, green
