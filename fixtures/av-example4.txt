@@ -6,4 +6,6 @@ blue
 blue
 blue
 blue
+blue
 green, yellow
+yellow, green

@@ -15,14 +15,32 @@ describe "Golf" do
     it "should sort a sentence by the second letter of each word" do
       Golf.hole2("the quick brown fox").should eql "the fox brown quick"
     end
-
+    it "should successfully sort 'jumps over the lazy dog'" do
+      Golf.hole2("jumps over the lazy dog").should eql "lazy the dog jumps over"
+    end
   end
-
 
   describe ".hole3" do
     it "should calculate the factorial of 4, i.e. 4*3*2*1" do
       Golf.hole3(4).should eql 24
     end
+    it "should be 120 for 5" do
+      Golf.hole3(5).should eql 120
+    end
+    it "should be 40320 for 8" do
+      Golf.hole3(8).should eql 40320
+    end
+    it "should be 3628800 for 10" do
+      Golf.hole3(10).should eql 3628800
+    end
+  end
+
+  describe ".hole4" do
+
+  end
+
+  describe ".hole5" do
+
   end
 
 
@@ -40,6 +58,8 @@ describe "Golf" do
       Golf.hole6(30).should eql [1,2,"fizz",4,"buzz","fizz",7,8,"fizz","buzz",11,"fizz",13,14,"fizzbuzz",16,17,"fizz",19,"buzz","fizz",22,23,"fizz","buzz",26,"fizz",28,29,"fizzbuzz"]
     end
   end
+
+
 
   describe ".hole8" do
     it "should give the first N numbers of the fibonacci sequence" do
