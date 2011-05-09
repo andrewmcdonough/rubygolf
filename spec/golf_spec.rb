@@ -6,20 +6,23 @@ describe "Golf" do
     it "should multiply the numbers in an array" do
       Golf.hole1([1,2,3,4]).should eql 24
     end
-
     it "should be 600 for [5,2,10,6]" do
       Golf.hole1([5,2,10,6]).should eql 600
     end
+    it "should be 50 for [2,5,5]" do
+      Golf.hole1([2,5,5]).should eql 50
+    end
   end
-
 
   describe ".hole2" do
     it "should sort a sentence by the second letter of each word" do
       Golf.hole2("the quick brown fox").should eql "the fox brown quick"
     end
-
     it "should successfully sort 'jumps over the lazy dog'" do
       Golf.hole2("jumps over the lazy dog").should eql "lazy the dog jumps over"
+    end
+    it "should successfully sort 'ruby golf is great'" do
+      Golf.hole2("ruby golf is great").should eql "golf great is ruby"
     end
   end
 
@@ -88,6 +91,16 @@ describe "Golf" do
 
     it "should play fizzbuzz to 30" do
       Golf.hole6(30).should eql [1,2,"fizz",4,"buzz","fizz",7,8,"fizz","buzz",11,"fizz",13,14,"fizzbuzz",16,17,"fizz",19,"buzz","fizz",22,23,"fizz","buzz",26,"fizz",28,29,"fizzbuzz"]
+    end
+  end
+
+  describe ".hole7" do
+    it "should collapse consecutive numbers to a range" do
+      Golf.hole7([1,2,3]).should eql ["1-3"]
+    end
+
+    it "should keep separate ranges distinct" do
+      Golf.hole7([1,2,3,5,6,7,100,101]).should eql ["1-3","5-7","100-101"]
     end
   end
 
