@@ -17,12 +17,24 @@ describe "Golf" do
     it "should sort a sentence by the second letter of each word" do
       Golf.hole2("the quick brown fox").should eql "the fox brown quick"
     end
-  end
 
+    it "should successfully sort 'jumps over the lazy dog'" do
+      Golf.hole2("jumps over the lazy dog").should eql "lazy the dog jumps over"
+    end
+  end
 
   describe ".hole3" do
     it "should calculate the factorial of 4, i.e. 4*3*2*1" do
       Golf.hole3(4).should eql 24
+    end
+    it "should be 120 for 5" do
+      Golf.hole3(5).should eql 120
+    end
+    it "should be 40320 for 8" do
+      Golf.hole3(8).should eql 40320
+    end
+    it "should be 3628800 for 10" do
+      Golf.hole3(10).should eql 3628800
     end
   end
 
